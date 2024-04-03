@@ -43,22 +43,24 @@ This can be handled by RDKit.
 
 
 **Task**
-1/ Load data and generate as graphs:
-- To generate a graph from SMILES, first you need to construct a molecule object of each SMILES's string. 
+
+1/ Graph Construction:
+- Given the molecular strings (under SMILES format), We have to construct graphs for each SMILES's string. 
 - Then, you can represent as a graph for each object, which means that 2500 modules object will have 2500 graphs.
 
- 2/ Calculate similarity using numerous methods. 
-- Load graph_temp.csv as a graph network and calculate graph similarity of graph_temp's graph with graphs(from task 1).
- i.e. you can use Graph Edit Distance to compute the graph similarity.
+2/ Graph Similarity
+- Given a few molecular strings (test dataset), finding the similar graphs.
+- Students can use some similarity measurements, i.e., Graph Edit Distance, average_shortest_path_length, diameter, ...)
 
-3/ Visualize the graphs in task 1 using t-SNE or PCA.
+3/ Graph Classification
 
-
-4/ Classification task: consider numerous methods to classify the label of graphs (from task 1)
-i.e. Machine Learning, Deep Learning.
+3.1. Using some conventional models, i.e., SVM classifier to classify the molecules.
 - You need to split the dataset into train/test set or train/validation/test set based on ratio.
+- Note: Graph-Based Features could be degree distribution, clustering coefficient, or centrality measures.
+3.2. Graph visualization 
+- Students can use T-Sne/PCA.
 
-5/ Write a report about what you found, explain the idea, method, and result.
+4/ Write a report about what you found, explain the idea, method, and result.
 
 Suggestion library for AI:
 - Sklearn for Machine Learning model.
