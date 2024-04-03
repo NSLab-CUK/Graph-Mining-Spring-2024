@@ -40,6 +40,9 @@ Please make sure to submit all assignments through the online learning platform 
 
 Late submissions will be accepted, but the maximum grade that can be achieved for any assignments submitted after the deadline is B (8 points).
 
+### Term Project
+
+* [![Kaggle](https://img.shields.io/badge/kaggle-Term%20Project-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/competitions/2024-1-cuk-gm-project/overview)
 
 ### Contributors
 
