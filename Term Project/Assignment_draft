@@ -1,0 +1,76 @@
+**Background**
+The blood-brain barrier (BBB) is a highly selective membrane system that separates the bloodstream from the central nervous system (CNS). It plays a vital role in maintaining brain homeostasis by controlling the passage of substances between the blood and the brain tissue.  Only essential nutrients and specific molecules can readily cross the BBB, while large molecules, ions, and most pathogens are excluded [1].
+
+Developing new drugs for neurological disorders is a challenging process, and a key hurdle is ensuring the drug can effectively penetrate the BBB. Traditionally, in-vitro and in-vivo experiments are used to assess BBB permeability, which are expensive and time-consuming. In recent years, machine learning (ML) has emerged as a powerful tool to accelerate drug discovery, and graph classification using Artificial Intelligence (AI) offers a promising approach for predicting BBB permeability of compounds.
+
+Molecules can be represented as graphs [2], where atoms are nodes and chemical bonds are edges. This representation captures the complex structure and connectivity of the molecule, which are crucial factors influencing BBB permeability. Graph classification techniques can then analyze these graphs and learn the underlying patterns that differentiate BBB-penetrating compounds from those that cannot.
+
+Reference:
+[1] Ballabh P, Braun A, Nedergaard M (June 2004). "The blood-brain barrier: an overview: structure, regulation, and clinical implications"
+[2] Baek, J., Kang, M., & Hwang, S. J. (2021). Accurate learning of graph representations with graph multiset pooling. ICLR 2021.
+
+**Goal**
+Graph Classification using Artificial Intelligence (AI) technique (Machine Learning, Deep Learning, Graph Neural Network)
+to classify whether a compound can penetrate the blood-brain barrier (BBB) or not.
+
+#### Dataset
+- Modecular dataset: BBBP: Binary labels of blood-brain barrier penetration(permeability).
+- Link: https://moleculenet.org/datasets-1.
+- Location: ./data/BBBP.csv
+
+### -----Dataset information ----
+The dataset contains **2,050** molecules. Each molecule come with a **name**, **label(p_np): blood-brain barrier or not**
+and **SMILES** string.
+
+The blood-brain barrier (BBB) is a membrane separating the blood from the brain
+extracellular fluid, hence blocking out most drugs (molecules) from reaching
+the brain. Because of this, the BBBP has been important to study for the development of
+new drugs that aim to target the central nervous system. The labels for this
+data set are binary (1 or 0) and indicate the permeability of the molecules.
+
+- Source: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8708321/
+
+### Load Dataset
+- Load data locally in folder. Or download from github data folder.
+- Method to load data: SMILES method.
+
+### Generate graphs
+To generate complete graphs from SMILES, we need to implement those step:
+
+1. `molecule_from_smiles`, which takes as input a SMILES and returns a molecule object.
+This can be handled by RDKit.
+2. `graph_from_molecule`, which takes as input a molecule object and returns a graph.
+
+
+**Task**
+1/ Load data and generate as graphs:
+- To generate a graph from SMILES, first you need to construct a molecule object of each SMILES's string. 
+- Then, you can represent as a graph for each object, which means that 2500 modules object will have 2500 graphs.
+
+ 2/ Calculate similarity using numerous methods. 
+- Load graph_temp.csv as a graph network and calculate graph similarity of graph_temp's graph with graphs(from task 1).
+ i.e. you can use Graph Edit Distance to compute the graph similarity.
+
+3/ Visualize the graphs in task 1 using t-SNE or PCA.
+
+
+4/ Classification task: consider numerous methods to classify the label of graphs (from task 1)
+i.e. Machine Learning, Deep Learning.
+- You need to split the dataset into train/test set or train/validation/test set based on ratio.
+
+5/ Write a report about what you found, explain the idea, method, and result.
+
+Suggestion library for AI:
+- Sklearn for Machine Learning model.
+- Deep Learning model: Pytorch.
+
+**Report**
+- There is no correct way to build a graph, and it is okay to use methods not learned in class to improve performance.
+Or you can use our recommendation (SMILES method from RDKit). Same for other tasks.
+- However, the report must be able to explain how the graph was built, what technology was used, and why it was used. 
+Even if the ranking is low, if the explanation in the report is understandable, you can receive a high score. 
+Conversely, even if the ranking is high, you can receive a low score if the explanation is not sufficient. 
+Submit the code you used to verify the results and the report.
+
+**[Cheating Policy]**
+- If you use another student's idea, both person will receive an F.
