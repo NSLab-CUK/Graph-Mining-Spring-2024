@@ -36,7 +36,7 @@ Late submissions will be accepted, but the maximum grade that can be achieved fo
 
 ### Term Project
 
-* [![Kaggle](https://img.shields.io/badge/kaggle-Term%20Project-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/competitions/2024-1-cuk-gm-project/overview)
+* [![Kaggle](https://img.shields.io/badge/Kaggle-Term%20Project-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/competitions/2024-1-cuk-gm-project/overview)
 
 
 ### Contact
