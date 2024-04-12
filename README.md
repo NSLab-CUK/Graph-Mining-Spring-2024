@@ -36,6 +36,8 @@ Late submissions will be accepted, but the maximum grade that can be achieved fo
 
 ### Term Project
 
+Grading for the term project will be based on a scale of A (50 points), B (40 points), C (30 points), and F (0 points) for all projects not submitted on time. Please be sure to submit your codes, analysis results, and reports via the following Kaggle competition before the deadline.
+
 * [![Kaggle](https://img.shields.io/badge/Kaggle-Term%20Project-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/competitions/2024-1-cuk-gm-project/overview)
 
 
