@@ -40,6 +40,11 @@ Grading for the term project will be based on a scale of A (50 points), B (40 po
 
 * [![Kaggle](https://img.shields.io/badge/Kaggle-Term%20Project-20BEFF?style=flat-square&logo=kaggle)](https://www.kaggle.com/competitions/2024-1-cuk-gm-project/overview)
 
+### Syllabus
+
+The syllabus for this class can be found on the following Notion page.
+
+* <a href="https://ns-cuk.notion.site/06837-Graph-Mining-Spring-2024-d61162f663a141929559c406d83ca187"><img src="https://img.shields.io/badge/Notion-Syllabus-000000?style=flat-square&logo=Notion"></a>
 
 ### Contact
 
